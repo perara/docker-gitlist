@@ -3,5 +3,5 @@ A dockerized version of gitlist
 
 ## Usage
 ```bash
-docker run -it -v /path/to/repos:/git -p 8080:80 perara/docker-gitlist
+docker run -d -v /path/to/gits:/git -p 8085:80 --name gitlist --restart always perara/docker-gitlist
 ```
